@@ -133,7 +133,7 @@ services.Configure<RazorViewEngineOptions>(options =>
    {
      routes.MapRoute(
          name: "areaRoute",
-         template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+         template: "{area=exists}/{controller=Home}/{action=Index}/{id?}");
 
      routes.MapRoute(
          name: "default",
